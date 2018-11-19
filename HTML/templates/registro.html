@@ -1,0 +1,19 @@
+<html>
+    <head>
+    	<title>Viajo sin ver</title>
+    </head>
+    
+
+    <body background="static/fondo8.jpg" style="background-repeat: no-repeat;background-size: 100%">
+        <form action="{{ url_for('procesoRegistrarse') }}" method="POST">
+    	<center><h1 style="font-family:verdana;font-size:40;font-style:bold;color:white">✈️   SAFE TRAVEL AIRLINES  ✈️</h1></center>
+    	<center><h3 style="font-family: verdana">👨‍✈️Registro pasajeros STA👨‍✈️</h3></center>
+        <center><h5>👨‍Username: <input type="text" name="user"></h5></center>
+        <br>
+        <center><h5>👨‍✈️Password: <input type="Password" name="pass"></h5></center>
+        <br>
+        <center><input type="submit" name="but" value="Registrarse"></center>
+        <p>{{ error }}</p>
+        </form>
+    </body>
+</html>

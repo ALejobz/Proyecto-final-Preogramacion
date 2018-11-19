@@ -1,0 +1,34 @@
+body{
+	background-color: #289386;
+}
+
+#contenido{
+	margin: 150px auto;
+	width: 600px;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th,td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #9DBEBA;
+	border-bottom: solid 5px #9DBEBA;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: "ddd";
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}

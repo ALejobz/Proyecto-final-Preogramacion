@@ -1,0 +1,28 @@
+<html>
+    <head>
+    	<title>Viajo sin ver</title>
+    </head>
+    {% block body %}
+    <body background="static/fondo8.jpg" style="background-repeat: no-repeat;background-size: 100%">
+        <form action="{{ url_for('reservar') }}" method="POST">
+    	<center><h1 style="font-family:verdana;font-size:40;font-style:bold;color:white">✈️  SAFE TRAVEL AIRLINES  ✈️</h1></center>
+        <center><h2>Bienvenido </h2></center>
+        <center><h2>{{ usuario }}</h2></center>
+        <br>
+        <br>
+        <br>
+
+    	<center><p style="font-family:verdana">👨‍✈️ Lugar de salida: <input type="text" name="salida"></p></center>
+
+       	<center><p style="font-family:verdana">👨‍✈️ Lugar de llegada: <input type="text" name="llegada"></p></center>
+    	
+    	<center><p style="font-family:verdana">👨‍✈️Aerolinea preferida: <input type="text" name="Confirm"></p></center>
+
+        <center><input type="submit" name="boton" value="Reservar"></center>
+        <br>
+        <br>
+        <p>{{ error2 }}</p>
+    	</form>
+    </body>
+    {% endblock %}
+</html>

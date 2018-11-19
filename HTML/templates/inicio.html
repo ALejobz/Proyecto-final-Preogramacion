@@ -1,0 +1,32 @@
+<html>
+    <head>
+    	<title>Viajo sin ver</title>
+    </head>
+    
+    {% block body %}
+    <body background="static/fondo8.jpg" style="background-repeat: no-repeat;background-size: 100%">
+    
+    	<form action="{{ url_for('procesoIniciar') }}" method="POST">
+    	<center><h1 style="font-family:verdana;font-size:40;font-style:bold;color: white;">✈️   SAFE TRAVEL AIRLINES  ✈️ </h1></center>
+    	
+        <center><h3 style="font-family: verdana;font-size: 20">LOGIN</h3></center>
+        <center>Username:</center>
+    	<center><input type="text" name="user"></center>
+    	<center>Password:</center>
+    	<center><input type="Password"  name="password"></center>
+    	<br>
+    	<center><input type="submit" name="boton" value="Login"></center>
+   		<br>
+    	<center><input type="submit" name="boton" value="Registro"></center>
+    	<center>{{ error }}</center>
+    	<br>
+    	<br>
+    	<br>
+    	<br>
+    	<center><p style="font-family:verdana;font-style:italic">"Siempre velando porque su viaje sea perfecto"</p></center>
+    
+    </body>
+    {% endblock %}
+
+
+</html>
